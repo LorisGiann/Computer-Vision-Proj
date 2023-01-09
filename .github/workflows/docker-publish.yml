@@ -67,7 +67,8 @@ jobs:
         with:
           context: .
           file: "Docker/Dockerfile" 
-          tags: "cvlab:latest"
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+    
+      - name: image ready at ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
