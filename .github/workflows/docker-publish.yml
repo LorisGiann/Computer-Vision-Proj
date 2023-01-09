@@ -71,4 +71,4 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
     
-      - name: image ready at ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      - run: echo "image ready at ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}"
