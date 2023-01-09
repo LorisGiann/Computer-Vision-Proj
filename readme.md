@@ -10,7 +10,7 @@ In this project the task is to quality check a saw blade by measuring the angle 
 Inspection results are overlaid into the image:
 ![Alt text](about/output.png)
 
-An optional blur detection can also be carried out:
+An optional burr detection can also be carried out:
 ![Alt text](about/output_highlight_imperfections.png)
 
 More information on the task to be carried out in the [attached pdf](Visual%20Inspection%20of%20Blade%20Tools%20Project.pdf)
@@ -28,4 +28,5 @@ Open a shell in the project directory, then:
 `docker run -d --net=host --name cvlab -v "$PWD":/home/cvlab -p 8888:8888 cvlab:latest`
 
 Get the link (with the access token included in the url) by looking at jupyter notebook ouput:
+
 `docker logs cvlab`
